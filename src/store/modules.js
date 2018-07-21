@@ -1,6 +1,6 @@
 import album from './modules/album'
-import post from './modules/comment'
-import user from './modules/photo'
+import comment from './modules/comment'
+import photo from './modules/photo'
 import post from './modules/post'
 import user from './modules/user'
 

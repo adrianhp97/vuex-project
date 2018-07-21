@@ -1,4 +1,5 @@
 import axios from 'axios'
+import Endpoint from './Endpoint'
 
 axios.defaults.baseURL = Endpoint.baseUrl
 axios.defaults.headers.post['Content-Type'] = 'application/json'

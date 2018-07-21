@@ -1,10 +1,9 @@
-import Api from '../api/Api'
-import CONSTANTS from './constants'
+import Api from '../../api/Api'
+import CONSTANTS from '../constants'
 
 export default {
   namespaced: true,
   state: {
-    loading: false,
     detailData: null
   },
   mutations: {

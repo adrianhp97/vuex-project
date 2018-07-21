@@ -1,22 +1,21 @@
 <template>
-  <layout>
-    
-  </layout>
+  <div>
+    <navigator></navigator>
+    <slot v-bind="{transform}"></slot>
+  </div>
 </template>
 
 <script>
-  import {mapGetters, mapActions} from 'vuex'
+import Navigator from './Navigator'
 
-  export default {
-    mixins: [],
-    components: {},
-    data () {
-      return {}
-    },
-    computed: {
-      ...mapGetters('', [])
-    },
-    mounted () {},
-    methods: {}
+export default {
+  components: {
+    Navigator
+  },
+  methods: {
+    transform (data) {
+      return this.$refs.form.submit()
+    }
   }
+}
 </script>

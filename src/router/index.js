@@ -5,6 +5,7 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
+  linkExactActiveClass: 'disabled active',
   routes: [
     {
       path: '/',
@@ -61,5 +62,9 @@ export default new Router({
       name: 'post.edit',
       component: () => import('@/components/Posts/Form')
     },
+    {
+      path: '*',
+      component: () => import('@/components/NotFound')
+    }
   ]
 })

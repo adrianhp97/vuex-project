@@ -1,7 +1,3 @@
-const actions = {
-  SET_LOCATION: ({ commit}, data) => {
-    commit('SET_LOCATION', data);
-  },
-}
+const actions = {}
 
 export default actions

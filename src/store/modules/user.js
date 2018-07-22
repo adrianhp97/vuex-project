@@ -31,7 +31,7 @@ export default {
         })
     },
     remove ({commit, dispatch}, id) {
-      return Api.user.remove(id)
+      return Api.user.delete(id)
         .then((data) => {
           return data
         })

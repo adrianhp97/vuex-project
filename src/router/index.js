@@ -9,8 +9,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('@/components/Home')
+      redirect: '/user'
     },
     {
       path: '/user',
@@ -31,11 +30,6 @@ export default new Router({
       path: '/user/:uid/album/:id',
       name: 'album.detail',
       component: () => import('@/components/Albums/Detail')
-    },
-    {
-      path: '/user/:uid/album/:id/photo',
-      name: 'photos',
-      component: () => import('@/components/Photos/Index')
     },
     {
       path: '/user/:uid/album/:id/photo/:pid',

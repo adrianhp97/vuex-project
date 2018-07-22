@@ -31,7 +31,7 @@ export default {
         })
     },
     remove ({commit, dispatch}, id) {
-      return Api.photo.remove(id)
+      return Api.photo.delete(id)
         .then((data) => {
           return data
         })

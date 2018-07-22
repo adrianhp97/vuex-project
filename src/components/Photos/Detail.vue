@@ -1,21 +1,17 @@
 <template>
-  <layout>
-  </layout>
+  <div v-if="getDetailData">
+    <img class="img-fluid" :src="getDetailData.url" :alt="getDetailData.id">
+  </div>
 </template>
 
 <script>
-// import {mapGetters, mapActions} from 'vuex'
+import {mapGetters} from 'vuex'
 
-// export default {
-//   mixins: [],
-//   components: {},
-//   data () {
-//     return {}
-//   },
-//   computed: {
-//     ...mapGetters('', [])
-//   },
-//   mounted () {},
-//   methods: {}
-// }
+export default {
+  computed: {
+    ...mapGetters('photo', [
+      'getDetailData'
+    ])
+  }
+}
 </script>

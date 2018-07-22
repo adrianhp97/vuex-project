@@ -31,7 +31,7 @@ export default {
         })
     },
     remove ({commit, dispatch}, id) {
-      return Api.album.remove(id)
+      return Api.album.delete(id)
         .then((data) => {
           return data
         })

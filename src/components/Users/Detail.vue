@@ -1,6 +1,6 @@
 <template>
   <layout>
-    <div class="container">
+    <div v-if="user !== null" class="container">
       <profile :data="user"></profile>
 
       <div v-if="albumList !== null" class="album-list-wrapper">
@@ -14,10 +14,10 @@
 
       <div v-if="postList !== null" class="post-list-wrapper">
         <div class="card">
-          <div class="card-body row">
+          <div class="card-body">
             <h4 class="card-title">Posts</h4>
-            <div class="col-sm-12 col-md-4 card-margin" v-for="post in postList" :key="post.id">
-              <post-cube :data="post" :uid="user.id"></post-cube>
+            <div class="row">
+              <post-cube :data="post" :uid="user.id" v-for="post in postList" :key="post.id"></post-cube>
             </div>
           </div>
         </div>

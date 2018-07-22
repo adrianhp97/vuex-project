@@ -31,7 +31,7 @@ export default {
         })
     },
     remove ({commit, dispatch}, id) {
-      return Api.post.remove(id)
+      return Api.post.delete(id)
         .then((data) => {
           return data
         })

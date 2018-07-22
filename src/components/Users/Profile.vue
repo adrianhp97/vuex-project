@@ -1,5 +1,5 @@
 <template>
-  <div class="profile-wrapper">
+  <div v-if="data !== null" class="profile-wrapper">
     <div class="card">
       <div class="card-body row">
         <div class="col-sm-12 col-md-3 text-center profile-left">
@@ -30,7 +30,7 @@
               <td class="profile-value">{{ data.address.street }}, {{ data.address.suite }}, {{ data.address.city }}</td>
             </tr>
             <tr>
-              <td class="profile-icon"><i class="	fa fa-phone"></i></td>
+              <td class="profile-icon"><i class="fa fa-phone"></i></td>
               <td class="profile-key">Phone</td>
               <td>:</td>
               <td class="profile-value">{{ data.phone }}</td>
@@ -48,19 +48,7 @@
 </template>
 
 <script>
-import {mapGetters, mapActions} from 'vuex'
-
 export default {
-  props: ['data'],
-  computed: {
-    ...mapGetters('user', [
-      'getDetailData'
-    ])
-  },
-  methods: {
-    ...mapActions('user', [
-      'setDetailData'
-    ])
-  }
+  props: ['data']
 }
 </script>

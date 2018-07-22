@@ -18,7 +18,7 @@
             <p class="card-text">{{ data.company.catchPhrase }}</p>
             <p class="card-text"><i class="fa fa-globe"></i> {{ data.website }}</p>
             <router-link :to="'/user/' + data.id" class="btn btn-primary btn-sm">
-              <i class="fa fa-info-circle"></i> Detail
+              <i class="fa fa-info-circle" @click="setSelectedData(data)"></i> Detail
             </router-link>
           </div>
         </div>

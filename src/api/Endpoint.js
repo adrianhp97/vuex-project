@@ -74,19 +74,19 @@ export default {
   },
   post: {
     all () {
-      return 'post'
+      return 'posts'
     },
     get (params) {
-      return 'post' + buildQuery(params)
+      return 'posts' + buildQuery(params)
     },
     detail (id) {
-      return 'post/' + id
+      return 'posts/' + id
     },
     create () {
       return 'posts'
     },
     update (id) {
-      return 'post/' + id
+      return 'posts/' + id
     },
     delete (id) {
       return 'posts/' + id

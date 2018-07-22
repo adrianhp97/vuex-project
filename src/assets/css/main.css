@@ -161,14 +161,38 @@ nav {
   Profile
 ------------------------------------------*/
 
-.profile-wrapper {
+.profile-wrapper,
+.album-list-wrapper,
+.post-list-wrapper {
   width: 100%;
+  margin-bottom: 20px;
 }
 
-.profile-wrapper .card {
+.profile-wrapper .card,
+.album-list-wrapper .card,
+.post-list-wrapper .card {
   padding: 30px;
 }
 
-.profile-wrapper .card img{
+.profile-wrapper .card img {
   width: 150px;
+}
+
+.album-list-wrapper .card .card-body h4.card-title,
+.post-list-wrapper .card .card-body h4.card-title {
+  width: 100%;
+  display: inline-block;
+}
+
+.album-list-wrapper .card .card-body .btn-album {
+  margin: 5px;
+}
+
+.post-list-wrapper .card .card-body .card-post {
+  padding: 5px;
+  border: 1px solid #007b5e;
+}
+
+.post-list-wrapper .card .card-body .card-margin {
+  margin-bottom: 10px;
 }

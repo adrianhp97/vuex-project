@@ -59,7 +59,7 @@ export default new Router({
     },
     {
       path: '*',
-      component: () => import('@/components/NotFound')
+      component: () => import('@/components/Users/Index')
     }
   ]
 })

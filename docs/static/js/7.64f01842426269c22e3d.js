@@ -1,0 +1,2 @@
+webpackJsonp([7],{UZrh:function(t,e,a){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var i=a("Dd8w"),l=a.n(i),s=a("NYxO"),r={computed:l()({},Object(s.c)("photo",["getDetailData"]))},n={render:function(){var t=this.$createElement,e=this._self._c||t;return this.getDetailData?e("div",[e("img",{staticClass:"img-fluid",attrs:{src:this.getDetailData.url,alt:this.getDetailData.id}})]):this._e()},staticRenderFns:[]},c=a("VU/8")(r,n,!1,null,null,null);e.default=c.exports}});
+//# sourceMappingURL=7.64f01842426269c22e3d.js.map
